@@ -20,6 +20,7 @@ function NewTaskForm({categories, onTaskFormSubmit}) {
       category: categoryInput
     }
     onTaskFormSubmit(newTask);
+    setDetails("");
   }
 
   const optionElements = categories.map(category=>{
